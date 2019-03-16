@@ -1,3 +1,4 @@
+import "./App.css";
 import React from "react";
 import unsplash from "../api/unsplash";
 import SearchBar from "./SearchBar";
@@ -15,10 +16,22 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="ui container" style={{ marginTop: "10px" }}>
+      <div className="ui container" style={{ marginTop: "15px" }}>
+        <div className="welcome-head">
+          <h1>Search image on Unsplash.com</h1>
+          <p className="welcome-text">
+            Simply type the type of image in the search bar and press enter.
+          </p>
+        </div>
+
         <SearchBar onSubmit={this.onSearchSubmit} />
         {/* Found: {this.state.images.length} images */}
         <ImageList images={this.state.images} />
+
+        <div className="welcome-footer">
+          <p>This application created using React.js</p>
+          <p>Noi Sinnang</p>
+        </div>
       </div>
     );
   }

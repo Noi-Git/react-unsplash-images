@@ -1,19 +1,17 @@
-.welcome-head {
+.welcome {
   text-align: center;
   color: #FF6C54;
-  padding-top: 20px;
+}
+.welcome-head {
+  padding-top: 25px;
 }
 
 .welcome-text {
   font-size: 18px;
-  text-align: center;
-  color: #FFA319;
   padding-bottom: 20px;
 }
 
 .welcome-footer {
-  font-size: 12px;
-  text-align: center;
-  color: #FFA319;
-  padding-bottom: 20px;
+  font-size: 14px;
+  padding: 0 20px;
 }

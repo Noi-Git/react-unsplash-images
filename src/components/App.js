@@ -17,10 +17,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container" style={{ marginTop: "15px" }}>
-        <div className="welcome-head">
+        <div className="welcome welcome-head">
           <h1>Search image on Unsplash.com</h1>
-          <p className="welcome-text">
-            Simply type the type of image in the search bar and press enter.
+          <p className="welcome welcome-text">
+            Simply type the image you are looking for in the search bar and
+            press enter.
           </p>
         </div>
 
@@ -28,7 +29,7 @@ class App extends React.Component {
         {/* Found: {this.state.images.length} images */}
         <ImageList images={this.state.images} />
 
-        <div className="welcome-footer">
+        <div className="welcome welcome-footer">
           <p>This application created using React.js</p>
           <p>Noi Sinnang</p>
         </div>
